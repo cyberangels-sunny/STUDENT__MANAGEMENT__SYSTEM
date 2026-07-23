@@ -1,66 +1,31 @@
-#update data base -- remainig 
-# Save data in students.tx
+
+
+
+
+    #    print("1 .... Add student _")     # --done
+    #    print("2 .... Delete student _") # --done
+    #    print("3 .... Search by roll number _") # --done
+    #    print("4 .... Update student name _") # --done 
+    #    print("5 .... Update student rollno _") # --done 
+    #    print("6 .... Update student marks _") # --done 
+    #   print("7 .... see details _")
+    #    print("8 .... Display topper _")   # --done
+    #    print("9 .... Sort students by marks _")  # --done    sor , shorta , num_stu
+    #    print("10 .... Save data in students.txt _") # --done
+    #    print("11.... exit _")
+
+
 
 class collage :
-    
-    stu = [{"name":"sunny","branch":"cybersecurity","roll":"bca 2025","marks":9},{"name":"sunny","branch":"cybersecurity","roll":"bca 2022","marks":17},{"name":"sunny","branch":"cybersecurity","roll":"bca 2026","marks":8}] 
+   stu = [{"name":"hacker"}]
 
-    def extract (cyberangles,roll):
-        roll = str(roll)
-        for i in cyberangles.stu:
-            for key , value  in i.items():
-                if key == "roll" and value == roll:
-                    return i
-        else :
-            return  
-    def search (cyberangels):
-        # same logic we can apply but we use efficiently
-        print(">? search a student by roll no -----*** ")
-        src = input("enter student roll number : ")
-    
-        p = False
-        for i in cyberangels.stu:
-            for key , value in i.items() :
-                if key =="roll" and value == src :
-                 
-                 p = True
-                 break
-        if p == True:
-            print(src,"present in data base ")
-            return src 
-        elif p== False:
-            return "null"   
+   def root (cyberangels):
+       if cyberangels.stu == [{}]:
+           return True
+       else :
+           return  False 
 
-    
-# this i search with by roll no and return index 
-    def update_roll(cyberangeles,i):
-        decide = cyberangeles.search()
-        if decide == "null":
-            print("ERROR : you entered incorrect roll no please try again ")
-            return 
-        else :
-            print("---!!!now you can update the roll no")
-            new_roll = input("enter new roll no : ")
-            new_dict = {
-                "roll":new_roll,
-            }
-            copy = cyberangeles.stu[0]
-            cyberangeles.stu[0]["roll"] = new_roll
+c1 = collage()
+res = c1.root()
+print(res)
 
-
-    def show (cyberangels):
-       for show in cyberangels.stu:
-           print (show)    
-
-           # this is testing file to test exploit file's function test here 
-
-
-
-
-
-
-c = collage()
-print(c.show)
-print("changes reflect")
-c.update_roll(0)
-print(c.show)
