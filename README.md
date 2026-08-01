@@ -33,3 +33,10 @@ default login password  cyberadmin
 - List of Dictionaries
 - Linear Search
 - Bubble Sort
+
+
+   # MARK VARIABLE NOT EXITS IN UPDATE_MARK FUNCTION BUG RAISE    
+   # more bugs are raise and  resolve it 
+   # major bug part was in setmarks function . it is crash the running progamme . 
+
+   # major bug is set mark functions  
